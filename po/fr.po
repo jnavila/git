@@ -3592,7 +3592,7 @@ msgstr ""
 "moment\n"
 "de le faire avec :\n"
 "\n"
-"git branche nouvelle_branche %s\n"
+"git branch nouvelle_branche %s\n"
 "\n"
 
 #: builtin/checkout.c:760
