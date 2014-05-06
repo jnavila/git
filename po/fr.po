@@ -3576,7 +3576,7 @@ msgstr "détacher la HEAD à la validation nommée"
 
 #: builtin/checkout.c:1096
 msgid "set upstream info for new branch"
-msgstr "paramétrer l'information de branche amont pour une nouvelle branche"
+msgstr "paramétrer les coordonnées de branche amont pour une nouvelle branche"
 
 #: builtin/checkout.c:1098
 msgid "new-branch"
