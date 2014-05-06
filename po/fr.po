@@ -343,7 +343,7 @@ msgstr "impossible d'ouvrir '%s'"
 
 #: bundle.c:138
 msgid "Repository lacks these prerequisite commits:"
-msgstr "Le dépôt ne dispose pas des commits prérequis :"
+msgstr "Le dépôt ne dispose pas des commits prérequis suivants :"
 
 #: bundle.c:162 sequencer.c:669 sequencer.c:1123 builtin/log.c:332
 #: builtin/log.c:821 builtin/log.c:1418 builtin/log.c:1644 builtin/merge.c:357
