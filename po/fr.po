@@ -620,7 +620,7 @@ msgid ""
 msgstr ""
 "ATTENTION : vous avez invoqué une commande Git nommée '%s' qui n'existe "
 "pas.\n"
-"Poursuite en supposant que vous avez voulu dire '%s'"
+"Continuons en supposant que vous avez voulu dire '%s'"
 
 #: help.c:373
 #, c-format
