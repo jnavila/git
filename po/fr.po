@@ -4565,12 +4565,12 @@ msgstr "réutiliser le message du commit spécifié"
 #: builtin/commit.c:1496
 msgid "use autosquash formatted message to fixup specified commit"
 msgstr ""
-"utiliser un message formaté par autosquash pour corriger le commit spécifié"
+"utiliser un message au format autosquash pour corriger le commit spécifié"
 
 #: builtin/commit.c:1497
 msgid "use autosquash formatted message to squash specified commit"
 msgstr ""
-"utiliser un message formaté par autosquash pour compresser le commit spécifié"
+"utiliser un message au format autosquash pour compresser le commit spécifié"
 
 #: builtin/commit.c:1498
 msgid "the commit is authored by me now (used with -C/-c/--amend)"
