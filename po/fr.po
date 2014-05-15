@@ -3846,7 +3846,7 @@ msgstr "git clone [options] [--] <dépôt> [<répertoire>]"
 #: builtin/clone.c:64 builtin/fetch.c:97 builtin/merge.c:222
 #: builtin/push.c:504
 msgid "force progress reporting"
-msgstr "forcer l'état d'avancement"
+msgstr "forcer l'affichage de l'état d'avancement"
 
 #: builtin/clone.c:66
 msgid "don't create a checkout"
