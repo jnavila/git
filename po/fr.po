@@ -8092,7 +8092,7 @@ msgstr ""
 #: builtin/push.c:361
 #, c-format
 msgid "Pushing to %s\n"
-msgstr "Poussage vers %s\n"
+msgstr "Poussée vers %s\n"
 
 #: builtin/push.c:365
 #, c-format
@@ -8185,7 +8185,7 @@ msgstr "check"
 
 #: builtin/push.c:497
 msgid "control recursive pushing of submodules"
-msgstr "contrôler le poussage récursif des sous-modules"
+msgstr "contrôler la poussée récursive des sous-modules"
 
 #: builtin/push.c:499
 msgid "use thin pack"
