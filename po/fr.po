@@ -6527,7 +6527,7 @@ msgstr "répondre dans le premier message à <id-message>"
 
 #: builtin/log.c:1221 builtin/log.c:1224
 msgid "boundary"
-msgstr "frontière"
+msgstr "limite"
 
 #: builtin/log.c:1222
 msgid "attach the patch"
