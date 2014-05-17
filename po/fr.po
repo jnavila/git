@@ -8736,12 +8736,12 @@ msgstr "Impossible de paramétrer %s"
 #: builtin/remote.c:1307
 #, c-format
 msgid " %s will become dangling!"
-msgstr " %s deviendra en suspens !"
+msgstr " %s se retrouvera en suspens !"
 
 #: builtin/remote.c:1308
 #, c-format
 msgid " %s has become dangling!"
-msgstr " %s est devenu en suspens !"
+msgstr " %s se retrouve en suspens !"
 
 #: builtin/remote.c:1314
 #, c-format
