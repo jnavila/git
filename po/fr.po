@@ -6404,7 +6404,7 @@ msgstr "Exactement une plage nécessaire."
 
 #: builtin/log.c:809
 msgid "Not a range."
-msgstr "Pas une plage."
+msgstr "Ceci n'est pas une plage."
 
 #: builtin/log.c:911
 msgid "Cover letter needs email format"
