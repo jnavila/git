@@ -10643,7 +10643,7 @@ msgstr "Conflits dans l'index. Essayez sans --index."
 
 #: git-stash.sh:457
 msgid "Could not save index tree"
-msgstr "Impossible de sauver l'arbre d'index"
+msgstr "Impossible de sauvegarder l'arbre d'index"
 
 #: git-stash.sh:491
 msgid "Cannot unstage modified files"
