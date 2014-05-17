@@ -10799,7 +10799,7 @@ msgstr ""
 #, sh-format
 msgid "No url found for submodule path '$displaypath' in .gitmodules"
 msgstr ""
-"URL non trouvé pour le chemin de sous-module '$displaypath' dans .gitmodules"
+"URL non trouvée pour le chemin de sous-module '$displaypath' dans .gitmodules"
 
 #: git-submodule.sh:620
 #, sh-format
