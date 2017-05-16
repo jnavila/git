@@ -1105,7 +1105,7 @@ msgid ""
 "There is nothing to exclude from by :(exclude) patterns.\n"
 "Perhaps you forgot to add either ':/' or '.' ?"
 msgstr ""
-"Il n'y a rien dont il faut exclure par des motifs :(exclure).\n"
+"Il n'y a rien qu'il faille exclure selon les motifs :(exclure).\n"
 "Peut-être avez-vous oublié d'ajouter ':/' ou '.' ?"
 
 #: pretty.c:968
@@ -1550,7 +1550,7 @@ msgid ""
 "examine these refs and maybe delete them. Turn this message off by\n"
 "running \"git config advice.objectNameWarning false\""
 msgstr ""
-"Git ne créé normalement jamais de référence qui se termine par 40 caractères "
+"Git ne crée normalement jamais de référence qui se termine par 40 caractères "
 "hexa\n"
 "car elle serait ignorée si vous spécifiiez 40-hexa. Ces références\n"
 "peuvent être créées par erreur. Par exemple,\n"
@@ -1852,7 +1852,7 @@ msgid ""
 "Everything below will be removed."
 msgstr ""
 "Ne touchez pas à la ligne ci-dessus\n"
-"Tout se qui suit sera éliminé."
+"Tout ce qui suit sera éliminé."
 
 #: wt-status.c:949
 msgid "You have unmerged paths."
@@ -1953,7 +1953,7 @@ msgstr "  (utilisez \"git commit --amend\" pour corriger le commit actuel)"
 msgid ""
 "  (use \"git rebase --continue\" once you are satisfied with your changes)"
 msgstr ""
-"  (utilisez \"git rebase --continue\" quand vous êtes satisfait de vos "
+"  (utilisez \"git rebase --continue\" quand vous serez satisfait de vos "
 "modifications)"
 
 #: wt-status.c:1100
@@ -2140,7 +2140,7 @@ msgstr "git add [<options>] [--] <chemin>..."
 #: builtin/add.c:65
 #, c-format
 msgid "unexpected diff status %c"
-msgstr "status de diff inattendu %c"
+msgstr "statut de diff inattendu %c"
 
 #: builtin/add.c:70 builtin/commit.c:277
 msgid "updating files failed"
@@ -2676,7 +2676,7 @@ msgstr ""
 
 #: builtin/apply.c:4543
 msgid "instead of applying the patch, output a summary for the input"
-msgstr "au lieu d'appliquer le patch, afficher un résumer de l'entrée"
+msgstr "au lieu d'appliquer le patch, afficher un résumé de l'entrée"
 
 #: builtin/apply.c:4545
 msgid "instead of applying the patch, see if the patch is applicable"
