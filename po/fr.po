@@ -3596,18 +3596,18 @@ msgstr "le dépôt de référence '%s' est greffé"
 
 #: sha1_file.c:1245
 msgid "offset before end of packfile (broken .idx?)"
-msgstr "offset avant la fin du fichier paquet (.idx cassé ?)"
+msgstr "décalage avant la fin du fichier paquet (.idx cassé ?)"
 
 #: sha1_file.c:2721
 #, c-format
 msgid "offset before start of pack index for %s (corrupt index?)"
-msgstr "offset avant le début de l'index de paquet pour %s (index corrompu ?)"
+msgstr "décalage avant le début de l'index de paquet pour %s (index corrompu ?)"
 
 #: sha1_file.c:2725
 #, c-format
 msgid "offset beyond end of pack index for %s (truncated index?)"
 msgstr ""
-"offset au delà de la fin de l'index de paquet pour %s (index tronqué ?)"
+"décalage au delà de la fin de l'index de paquet pour %s (index tronqué ?)"
 
 #: sha1_name.c:409
 #, c-format
@@ -3630,7 +3630,7 @@ msgid ""
 "examine these refs and maybe delete them. Turn this message off by\n"
 "running \"git config advice.objectNameWarning false\""
 msgstr ""
-"Git ne créé normalement jamais de référence qui se termine par 40 caractères "
+"Git ne crée normalement jamais de référence qui se termine par 40 caractères "
 "hexa\n"
 "car elle serait ignorée si vous spécifiiez 40-hexa. Ces références\n"
 "peuvent être créées par erreur. Par exemple,\n"
@@ -3704,7 +3704,7 @@ msgstr ""
 #: submodule.c:1691 submodule.c:1747
 #, c-format
 msgid "could not lookup name for submodule '%s'"
-msgstr "impossible de trouve le nom pour le sous-module '%s'"
+msgstr "impossible de trouver le nom pour le sous-module '%s'"
 
 #: submodule.c:1695 builtin/submodule--helper.c:678
 #: builtin/submodule--helper.c:688
@@ -3720,7 +3720,7 @@ msgid ""
 "'%s'\n"
 msgstr ""
 "Migration du répertoire git de '%s%s' depuis\n"
-"'%s' sur\n"
+"'%s' vers\n"
 "'%s'\n"
 
 #: submodule.c:1782
@@ -3793,7 +3793,7 @@ msgstr "le fichier %s n'est pas inscriptible par l'utilisateur"
 
 #: trailer.c:965
 msgid "could not open temporary file"
-msgstr "impossible de créer un fichier temporaire"
+msgstr "impossible d'ouvrir un fichier temporaire"
 
 #: trailer.c:1001
 #, c-format
@@ -3816,7 +3816,7 @@ msgid ""
 "The following submodule paths contain changes that can\n"
 "not be found on any remote:\n"
 msgstr ""
-"Les chemins suivant de sous-module contiennent des modifications\n"
+"Les chemins suivants de sous-module contiennent des modifications\n"
 "qui ne peuvent être trouvées sur aucun distant :\n"
 
 #: transport.c:893
@@ -4242,7 +4242,7 @@ msgstr ""
 #: wt-status.c:226
 msgid "  (commit or discard the untracked or modified content in submodules)"
 msgstr ""
-"  (valider ou annuler le contenu non suivi ou modifié dans les sous-modules)"
+"  (validez ou annulez le contenu non suivi ou modifié dans les sous-modules)"
 
 #: wt-status.c:238
 #, c-format
