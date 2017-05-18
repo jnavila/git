@@ -3774,7 +3774,7 @@ msgstr "impossible de lire le fichier d'entrée '%s'"
 
 #: trailer.c:725
 msgid "could not read from stdin"
-msgstr "Impossible de lire depuis l'entrée standard"
+msgstr "impossible de lire depuis l'entrée standard"
 
 #: trailer.c:949 builtin/am.c:44
 #, c-format
@@ -4179,7 +4179,7 @@ msgstr "impossible d'accéder au répertoire de travail courant"
 #: wrapper.c:634
 #, c-format
 msgid "could not write to %s"
-msgstr "Impossible d'écrire dans %s"
+msgstr "impossible d'écrire dans %s"
 
 #: wrapper.c:636
 #, c-format
@@ -4658,7 +4658,7 @@ msgstr "devant "
 #: wt-status.c:2280
 #, c-format
 msgid "cannot %s: You have unstaged changes."
-msgstr "Impossible de %s : vous avez des modifications non indexées."
+msgstr "impossible de %s : vous avez des modifications non indexées."
 
 #: wt-status.c:2286
 msgid "additionally, your index contains uncommitted changes."
