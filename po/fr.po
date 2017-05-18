@@ -3382,8 +3382,8 @@ msgid ""
 "\n"
 msgstr ""
 "L'exécution a réussi : %s\n"
-"mais a laissé des modifications dans l'index ou la copie de travail\n"
-"Validez ou remisez vos modification, puis lancez\n"
+"mais a laissé des modifications dans l'index et/ou la copie de travail\n"
+"Validez ou remisez vos modifications, puis lancez\n"
 "\n"
 "  git rebase --continue\n"
 "\n"
@@ -3544,7 +3544,7 @@ msgstr "Impossible d'accéder au répertoire de travail courant"
 #: setup.c:1022 setup.c:1028
 #, c-format
 msgid "Cannot change to '%s'"
-msgstr "Impossible de modifié en '%s'"
+msgstr "Impossible de modifier en '%s'"
 
 #: setup.c:1041
 #, c-format
