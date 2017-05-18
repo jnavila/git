@@ -2415,7 +2415,7 @@ msgstr "Impossible de rendre %s inscriptible pour le groupe"
 
 #: pathspec.c:125
 msgid "Escape character '\\' not allowed as last character in attr value"
-msgstr "Le caractère d'échappement '\\\\' interdit comme dernier caractère dans une valeur d'attribut"
+msgstr "Caractère d'échappement '\\\\' interdit comme dernier caractère dans une valeur d'attribut"
 
 #: pathspec.c:143
 msgid "Only one 'attr:' specification is allowed."
@@ -2495,7 +2495,7 @@ msgid ""
 "empty strings as pathspecs will be made invalid in upcoming releases. please "
 "use . instead if you meant to match all paths"
 msgstr ""
-"les chaines de caractères vides comme spécificateurs de chemin seront "
+"les chaînes de caractères vides comme spécificateurs de chemin seront "
 "invalides dans les prochaines versions. Veuillez utiliser . à la place pour "
 "correspondre à tous le chemins"
 
@@ -2544,7 +2544,7 @@ msgstr "impossible d'ouvrir le répertoire git : %s"
 #: read-cache.c:2257
 #, c-format
 msgid "unable to unlink: %s"
-msgstr "échec lors de l'unlink : %s"
+msgstr "échec lors de la suppression de : %s"
 
 #: refs.c:619 builtin/merge.c:844
 #, c-format
@@ -2669,7 +2669,7 @@ msgstr "argument %%(align) non reconnu : %s"
 #: ref-filter.c:271
 #, c-format
 msgid "positive width expected with the %%(align) atom"
-msgstr "valeur positive attendue avec l'atome %%(align)"
+msgstr "largeur positive attendue avec l'atome %%(align)"
 
 #: ref-filter.c:286
 #, c-format
@@ -2679,7 +2679,7 @@ msgstr "argument %%(if) non reconnu : %s"
 #: ref-filter.c:371
 #, c-format
 msgid "malformed field name: %.*s"
-msgstr "nom de champ malformé %.*s"
+msgstr "nom de champ malformé : %.*s"
 
 #: ref-filter.c:397
 #, c-format
@@ -2739,7 +2739,7 @@ msgstr "(aucune branche, rebasage de %s)"
 #: ref-filter.c:1250
 #, c-format
 msgid "(no branch, bisect started on %s)"
-msgstr "(aucune branche, bisect a démarré sur %s)"
+msgstr "(aucune branche, bissection démarrée sur %s)"
 
 #. TRANSLATORS: make sure this matches
 #. "HEAD detached at " in wt-status.c
@@ -2777,12 +2777,12 @@ msgstr "objet malformé à '%s'"
 #: ref-filter.c:1759
 #, c-format
 msgid "ignoring ref with broken name %s"
-msgstr "réf avec un nom cassé %s ignoré"
+msgstr "réf avec un nom cassé %s ignorée"
 
 #: ref-filter.c:1764
 #, c-format
 msgid "ignoring broken ref %s"
-msgstr "réf cassé %s ignoré"
+msgstr "réf cassée %s ignorée"
 
 #: ref-filter.c:2028
 #, c-format
@@ -2820,7 +2820,7 @@ msgstr "HEAD ne pointe pas sur une branche"
 #: remote.c:1694
 #, c-format
 msgid "no such branch: '%s'"
-msgstr "pas de branche '%s'"
+msgstr "pas de branche : '%s'"
 
 #: remote.c:1697
 #, c-format
@@ -3043,7 +3043,7 @@ msgstr "vos modifications locales seraient écrasées par %s."
 
 #: sequencer.c:359
 msgid "commit your changes or stash them to proceed."
-msgstr "validez vos modifications ou les remiser pour continuer."
+msgstr "validez vos modifications ou remisez les pour continuer."
 
 #: sequencer.c:388
 #, c-format
