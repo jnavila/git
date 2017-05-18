@@ -3166,7 +3166,7 @@ msgstr "Ceci est le message de validation numéro %d :"
 #: sequencer.c:881
 #, c-format
 msgid "The commit message #%d will be skipped:"
-msgstr "Le message de validation %d sera ignoré :"
+msgstr "Le message de validation numéro %d sera ignoré :"
 
 #: sequencer.c:886
 #, c-format
@@ -3243,7 +3243,7 @@ msgstr "ligne %d invalide : %.*s"
 #: sequencer.c:1310
 #, c-format
 msgid "cannot '%s' without a previous commit"
-msgstr "'%s' impossible avec le commit précédent"
+msgstr "'%s' impossible sans un commit précédent"
 
 #: sequencer.c:1342
 #, c-format
@@ -3364,12 +3364,12 @@ msgstr ""
 "échec d'exécution : %s\n"
 "%sVous pouvez corriger le problème, puis lancer\n"
 "\n"
-"git rebase --continue\n"
+"  git rebase --continue\n"
 "\n"
 
 #: sequencer.c:1852
 msgid "and made changes to the index and/or the working tree\n"
-msgstr "et a mis à jour l'index ou l'arbre de travail\n"
+msgstr "et a mis à jour l'index et/ou l'arbre de travail\n"
 
 #: sequencer.c:1858
 #, c-format
