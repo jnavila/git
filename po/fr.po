@@ -2430,9 +2430,7 @@ msgstr "Impossible de rendre %s inscriptible pour le groupe"
 
 #: pathspec.c:125
 msgid "Escape character '\\' not allowed as last character in attr value"
-msgstr ""
-"Le caractère d'échappement '\\\\' interdit comme dernier caractère dans une "
-"valeur d'attribut"
+msgstr "Le caractère d'échappement '\\\\' interdit comme dernier caractère dans une valeur d'attribut"
 
 #: pathspec.c:143
 msgid "Only one 'attr:' specification is allowed."
@@ -2512,7 +2510,7 @@ msgid ""
 "empty strings as pathspecs will be made invalid in upcoming releases. please "
 "use . instead if you meant to match all paths"
 msgstr ""
-"les chaines de caractères vides comme spécificateurs de chemin seront "
+"les chaînes de caractères vides comme spécificateurs de chemin seront "
 "invalides dans les prochaines versions. Veuillez utiliser . à la place pour "
 "correspondre à tous le chemins"
 
@@ -2556,7 +2554,7 @@ msgstr "impossible d'ouvrir le répertoire git : %s"
 #: read-cache.c:2400
 #, c-format
 msgid "unable to unlink: %s"
-msgstr "échec lors de l'unlink : %s"
+msgstr "échec lors de la suppression de : %s"
 
 #: refs.c:620 builtin/merge.c:844
 #, c-format
@@ -2685,7 +2683,7 @@ msgstr "argument %%(align) non reconnu : %s"
 #: ref-filter.c:271
 #, c-format
 msgid "positive width expected with the %%(align) atom"
-msgstr "valeur positive attendue avec l'atome %%(align)"
+msgstr "largeur positive attendue avec l'atome %%(align)"
 
 #: ref-filter.c:286
 #, c-format
@@ -2695,7 +2693,7 @@ msgstr "argument %%(if) non reconnu : %s"
 #: ref-filter.c:371
 #, c-format
 msgid "malformed field name: %.*s"
-msgstr "nom de champ malformé %.*s"
+msgstr "nom de champ malformé : %.*s"
 
 #: ref-filter.c:397
 #, c-format
@@ -2755,7 +2753,7 @@ msgstr "(aucune branche, rebasage de %s)"
 #: ref-filter.c:1250
 #, c-format
 msgid "(no branch, bisect started on %s)"
-msgstr "(aucune branche, bisect a démarré sur %s)"
+msgstr "(aucune branche, bissection démarrée sur %s)"
 
 #. TRANSLATORS: make sure this matches
 #. "HEAD detached at " in wt-status.c
@@ -2793,12 +2791,12 @@ msgstr "objet malformé à '%s'"
 #: ref-filter.c:1759
 #, c-format
 msgid "ignoring ref with broken name %s"
-msgstr "réf avec un nom cassé %s ignoré"
+msgstr "réf avec un nom cassé %s ignorée"
 
 #: ref-filter.c:1764
 #, c-format
 msgid "ignoring broken ref %s"
-msgstr "réf cassé %s ignoré"
+msgstr "réf cassée %s ignorée"
 
 #: ref-filter.c:2028
 #, c-format
@@ -2836,7 +2834,7 @@ msgstr "HEAD ne pointe pas sur une branche"
 #: remote.c:1694
 #, c-format
 msgid "no such branch: '%s'"
-msgstr "pas de branche '%s'"
+msgstr "pas de branche : '%s'"
 
 #: remote.c:1697
 #, c-format
@@ -3059,7 +3057,7 @@ msgstr "vos modifications locales seraient écrasées par %s."
 
 #: sequencer.c:359
 msgid "commit your changes or stash them to proceed."
-msgstr "validez vos modifications ou les remiser pour continuer."
+msgstr "validez vos modifications ou remisez les pour continuer."
 
 #: sequencer.c:388
 #, c-format
@@ -3154,7 +3152,7 @@ msgstr "une HEAD est nécessaire à la correction"
 
 #: sequencer.c:844
 msgid "could not read HEAD"
-msgstr "Impossible de lire HEAD"
+msgstr "impossible de lire HEAD"
 
 #: sequencer.c:846
 msgid "could not read HEAD's commit message"
@@ -3182,7 +3180,7 @@ msgstr "Ceci est le message de validation numéro %d :"
 #: sequencer.c:881
 #, c-format
 msgid "The commit message #%d will be skipped:"
-msgstr "Le message de validation %d sera ignoré :"
+msgstr "Le message de validation numéro %d sera ignoré :"
 
 #: sequencer.c:886
 #, c-format
@@ -3259,7 +3257,7 @@ msgstr "ligne %d invalide : %.*s"
 #: sequencer.c:1311
 #, c-format
 msgid "cannot '%s' without a previous commit"
-msgstr "'%s' impossible avec le commit précédent"
+msgstr "'%s' impossible sans un commit précédent"
 
 #: sequencer.c:1344
 #, c-format
@@ -3380,12 +3378,12 @@ msgstr ""
 "échec d'exécution : %s\n"
 "%sVous pouvez corriger le problème, puis lancer\n"
 "\n"
-"git rebase --continue\n"
+"  git rebase --continue\n"
 "\n"
 
 #: sequencer.c:1859
 msgid "and made changes to the index and/or the working tree\n"
-msgstr "et a mis à jour l'index ou l'arbre de travail\n"
+msgstr "et a mis à jour l'index et/ou l'arbre de travail\n"
 
 #: sequencer.c:1865
 #, c-format
@@ -3398,8 +3396,8 @@ msgid ""
 "\n"
 msgstr ""
 "L'exécution a réussi : %s\n"
-"mais a laissé des modifications dans l'index ou la copie de travail\n"
-"Validez ou remisez vos modification, puis lancez\n"
+"mais a laissé des modifications dans l'index et/ou la copie de travail\n"
+"Validez ou remisez vos modifications, puis lancez\n"
 "\n"
 "  git rebase --continue\n"
 "\n"
@@ -3421,14 +3419,14 @@ msgid ""
 "Your changes are safe in the stash.\n"
 "You can run \"git stash pop\" or \"git stash drop\" at any time.\n"
 msgstr ""
-"L'application de l'autoremisage a provoqué des conflits\n"
-"Vos  modifications sont à l'abri dans la remise.\n"
+"L'application de l'autoremisage a provoqué des conflits.\n"
+"Vos modifications sont à l'abri dans la remise.\n"
 "Vous pouvez lancer \"git stash pop\" ou \"git stash drop\" à tout moment.\n"
 
 #: sequencer.c:2016
 #, c-format
 msgid "Stopped at %s...  %.*s\n"
-msgstr "arrêt à %s... %.*s\n"
+msgstr "Arrêt à %s... %.*s\n"
 
 #: sequencer.c:2058
 #, c-format
@@ -3560,7 +3558,7 @@ msgstr "Impossible d'accéder au répertoire de travail courant"
 #: setup.c:1022 setup.c:1028
 #, c-format
 msgid "Cannot change to '%s'"
-msgstr "Impossible de modifié en '%s'"
+msgstr "Impossible de modifier en '%s'"
 
 #: setup.c:1041
 #, c-format
@@ -3612,18 +3610,18 @@ msgstr "le dépôt de référence '%s' est greffé"
 
 #: sha1_file.c:1245
 msgid "offset before end of packfile (broken .idx?)"
-msgstr "offset avant la fin du fichier paquet (.idx cassé ?)"
+msgstr "décalage avant la fin du fichier paquet (.idx cassé ?)"
 
 #: sha1_file.c:2721
 #, c-format
 msgid "offset before start of pack index for %s (corrupt index?)"
-msgstr "offset avant le début de l'index de paquet pour %s (index corrompu ?)"
+msgstr "décalage avant le début de l'index de paquet pour %s (index corrompu ?)"
 
 #: sha1_file.c:2725
 #, c-format
 msgid "offset beyond end of pack index for %s (truncated index?)"
 msgstr ""
-"offset au delà de la fin de l'index de paquet pour %s (index tronqué ?)"
+"décalage au delà de la fin de l'index de paquet pour %s (index tronqué ?)"
 
 #: sha1_name.c:409
 #, c-format
@@ -3720,7 +3718,7 @@ msgstr ""
 #: submodule.c:1690 submodule.c:1746
 #, c-format
 msgid "could not lookup name for submodule '%s'"
-msgstr "impossible de trouve le nom pour le sous-module '%s'"
+msgstr "impossible de trouver le nom pour le sous-module '%s'"
 
 #: submodule.c:1694 builtin/submodule--helper.c:678
 #: builtin/submodule--helper.c:688
@@ -3736,7 +3734,7 @@ msgid ""
 "'%s'\n"
 msgstr ""
 "Migration du répertoire git de '%s%s' depuis\n"
-"'%s' sur\n"
+"'%s' vers\n"
 "'%s'\n"
 
 #: submodule.c:1781
@@ -3790,7 +3788,7 @@ msgstr "impossible de lire le fichier d'entrée '%s'"
 
 #: trailer.c:725
 msgid "could not read from stdin"
-msgstr "Impossible de lire depuis l'entrée standard"
+msgstr "impossible de lire depuis l'entrée standard"
 
 #: trailer.c:949 builtin/am.c:44
 #, c-format
@@ -3809,7 +3807,7 @@ msgstr "le fichier %s n'est pas inscriptible par l'utilisateur"
 
 #: trailer.c:965
 msgid "could not open temporary file"
-msgstr "impossible de créer un fichier temporaire"
+msgstr "impossible d'ouvrir un fichier temporaire"
 
 #: trailer.c:1001
 #, c-format
@@ -3832,7 +3830,7 @@ msgid ""
 "The following submodule paths contain changes that can\n"
 "not be found on any remote:\n"
 msgstr ""
-"Les chemins suivant de sous-module contiennent des modifications\n"
+"Les chemins suivants de sous-module contiennent des modifications\n"
 "qui ne peuvent être trouvées sur aucun distant :\n"
 
 #: transport.c:893
@@ -4197,7 +4195,7 @@ msgstr "impossible d'accéder au répertoire de travail courant"
 #: wrapper.c:634
 #, c-format
 msgid "could not write to %s"
-msgstr "Impossible d'écrire dans %s"
+msgstr "impossible d'écrire dans %s"
 
 #: wrapper.c:636
 #, c-format
@@ -4260,7 +4258,7 @@ msgstr ""
 #: wt-status.c:226
 msgid "  (commit or discard the untracked or modified content in submodules)"
 msgstr ""
-"  (valider ou annuler le contenu non suivi ou modifié dans les sous-modules)"
+"  (validez ou annulez le contenu non suivi ou modifié dans les sous-modules)"
 
 #: wt-status.c:238
 #, c-format
@@ -4676,7 +4674,7 @@ msgstr "devant "
 #: wt-status.c:2280
 #, c-format
 msgid "cannot %s: You have unstaged changes."
-msgstr "Impossible de %s : vous avez des modifications non indexées."
+msgstr "impossible de %s : vous avez des modifications non indexées."
 
 #: wt-status.c:2286
 msgid "additionally, your index contains uncommitted changes."
