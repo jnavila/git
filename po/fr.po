@@ -711,7 +711,7 @@ msgstr ""
 
 #: apply.c:4929
 msgid "instead of applying the patch, output a summary for the input"
-msgstr "au lieu d'appliquer le patch, afficher un résumer de l'entrée"
+msgstr "au lieu d'appliquer le patch, afficher un résumé de l'entrée"
 
 #: apply.c:4931
 msgid "instead of applying the patch, see if the patch is applicable"
