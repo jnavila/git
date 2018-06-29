@@ -16302,7 +16302,7 @@ msgstr ""
 
 #: git-send-email.perl:748
 msgid "Summary email is empty, skipping it\n"
-msgstr "Le courriel de résumé etant vide, il a été ignoré\n"
+msgstr "Le courriel de résumé étant vide, il a été ignoré\n"
 
 #. TRANSLATORS: please keep [y/N] as is.
 #: git-send-email.perl:780
