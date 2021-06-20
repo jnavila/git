@@ -10075,7 +10075,7 @@ msgstr "HEAD détachée depuis "
 
 #: wt-status.c:1752
 msgid "Not currently on any branch."
-msgstr "Actuellement sur aucun branche."
+msgstr "Actuellement sur aucune branche."
 
 #: wt-status.c:1769
 msgid "Initial commit"
@@ -12396,7 +12396,7 @@ msgid ""
 "'%s' could be both a local file and a tracking branch.\n"
 "Please use -- (and optionally --no-guess) to disambiguate"
 msgstr ""
-"'%s' pourrait être un fichier local ou un branche de suivi.\n"
+"'%s' pourrait être un fichier local ou une branche de suivi.\n"
 "Veuillez utiliser -- (et --no-guess en facultatif) pour les distinguer"
 
 #: builtin/checkout.c:1170
