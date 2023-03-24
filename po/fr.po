@@ -23554,7 +23554,7 @@ msgstr "remiser seulement les modifications indexées"
 
 #: builtin/stash.c:1660 builtin/stash.c:1732
 msgid "stash in patch mode"
-msgstr "remiser une mode rustine"
+msgstr "remiser en mode rustine"
 
 #: builtin/stash.c:1661 builtin/stash.c:1733
 msgid "quiet mode"
