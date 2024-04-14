@@ -1073,7 +1073,7 @@ include::pretty-options.txt[]
 +
 --
 `--date=relative` shows dates relative to the current time,
-e.g. ``2 hours ago''. The `-local` option has no effect for
+e.g. `2 hours ago`. The `-local` option has no effect for
 `--date=relative`.
 
 `--date=local` is an alias for `--date=default-local`.

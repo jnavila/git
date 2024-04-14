@@ -546,8 +546,8 @@ When rebasing merges, there are two modes: `rebase-cousins` and
 `<upstream>` as direct ancestor will keep their original branch point, i.e.
 commits that would be excluded by linkgit:git-log[1]'s `--ancestry-path`
 option will keep their original ancestry by default. In `rebase-cousins` mode,
-such commits are instead rebased onto `<upstream>` (or `<onto>`, if
-specified).
+such commits are instead rebased onto `<upstream>` (or `<newbase>` from `--onto`
+, if specified).
 +
 It is currently only possible to recreate the merge commits using the
 `ort` merge strategy; different merge strategies can be used only via

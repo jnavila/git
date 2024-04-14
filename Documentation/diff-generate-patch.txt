@@ -14,10 +14,10 @@ You can customize the creation of patch text via the
 `GIT_EXTERNAL_DIFF` and the `GIT_DIFF_OPTS` environment variables
 (see linkgit:git[1]), and the `diff` attribute (see linkgit:gitattributes[5]).
 
-What the -p option produces is slightly different from the traditional
+What the `-p` option produces is slightly different from the traditional
 diff format:
 
-1.   It is preceded by a "git diff" header that looks like this:
+1.   It is preceded by a `git diff` header that looks like this:
 
        diff --git a/file1 b/file2
 +
@@ -30,18 +30,19 @@ name of the source file of the rename/copy and the name of
 the file that the rename/copy produces, respectively.
 
 2.   It is followed by one or more extended header lines:
-
-       old mode <mode>
-       new mode <mode>
-       deleted file mode <mode>
-       new file mode <mode>
-       copy from <path>
-       copy to <path>
-       rename from <path>
-       rename to <path>
-       similarity index <number>
-       dissimilarity index <number>
-       index <hash>..<hash> <mode>
++
+[verse]
+old mode _<mode>_
+new mode _<mode>_
+deleted file mode _<mode>_
+new file mode _<mode>_
+copy from _<path>_
+copy to _<path>_
+rename from _<path>_
+rename to _<path>_
+similarity index _<number>_
+dissimilarity index _<number>_
+index _<hash>_.._<hash>_ _<mode>_
 +
 File modes are printed as 6-digit octal numbers including the file type
 and file permission bits.
@@ -56,7 +57,7 @@ files, while 100% dissimilarity means that no line from the old
 file made it into the new one.
 +
 The index line includes the blob object names before and after the change.
-The <mode> is included if the file mode does not change; otherwise,
+The _<mode>_ is included if the file mode does not change; otherwise,
 separate lines indicate the old and the new mode.
 
 3.  Pathnames with "unusual" characters are quoted as explained for
@@ -135,16 +136,16 @@ or like this (when the `--cc` option is used):
 2.   It is followed by one or more extended header lines
      (this example shows a merge with two parents):
 
-       index <hash>,<hash>..<hash>
-       mode <mode>,<mode>..<mode>
-       new file mode <mode>
-       deleted file mode <mode>,<mode>
+       index _<hash>_,_<hash>_.._<hash>_
+       mode _<mode>_,_<mode>_.._<mode>_
+       new file mode _<mode>_
+       deleted file mode _<mode>_,_<mode>_
 +
-The `mode <mode>,<mode>..<mode>` line appears only if at least one of
-the <mode> is different from the rest. Extended headers with
+The "mode _<mode>_,_<mode>_.._<mode>_" line appears only if at least one of
+the _<mode>_ is different from the rest. Extended headers with
 information about detected content movement (renames and
 copying detection) are designed to work with the diff of two
-<tree-ish> and are not used by combined diff format.
+_<tree-ish>_ and are not used by combined diff format.
 
 3.   It is followed by a two-line from-file/to-file header:
 
@@ -155,7 +156,7 @@ Similar to the two-line header for the traditional 'unified' diff
 format, `/dev/null` is used to signal created or deleted
 files.
 +
-However, if the --combined-all-paths option is provided, instead of a
+However, if the `--combined-all-paths` option is provided, instead of a
 two-line from-file/to-file, you get an N+1 line from-file/to-file header,
 where N is the number of parents in the merge commit:
 
@@ -173,8 +174,8 @@ parents.
      was created for review of merge commit changes, and was not
      meant to be applied. The change is similar to the change in the
      extended 'index' header:
-
-       @@@ <from-file-range> <from-file-range> <to-file-range> @@@
++
+     `@@@` _<from-file-range>_ _<from-file-range>_ _<to-file-range>_ `@@@`
 +
 There are (number of parents + 1) `@` characters in the chunk
 header for combined diff format.

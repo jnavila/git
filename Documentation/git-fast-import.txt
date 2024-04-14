@@ -120,7 +120,7 @@ Locations of Marks Files
 	importers may use a different location.
 +
 Relative and non-relative marks may be combined by interweaving
---(no-)-relative-marks with the --(import|export)-marks= options.
+--[no-]-relative-marks with the --(import|export)-marks= options.
 
 Submodule Rewriting
 ~~~~~~~~~~~~~~~~~~~
