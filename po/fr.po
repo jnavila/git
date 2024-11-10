@@ -50,7 +50,8 @@
 #   mapping          |  mise en correspondance
 #   merge            |  fusion
 #   pack             |  paquet
-#   patches          |  patchs
+#   patch (v)        |  appliquer une/des rustine(s)
+#   patches          |  rustines
 #   pattern          |  motif
 #   to prune         |  élaguer
 #   to push          |  pousser
@@ -175,7 +176,7 @@ msgid "No changes.\n"
 msgstr "Aucune modification.\n"
 
 msgid "Patch update"
-msgstr "Mise à jour par patch"
+msgstr "Mise à jour par rustine"
 
 msgid "Review diff"
 msgstr "Réviser la différence"
@@ -273,7 +274,7 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "staging."
 msgstr ""
-"Si le patch s'applique proprement, la section éditée sera immédiatement "
+"Si la rustine s'applique proprement, la section éditée sera immédiatement "
 "marquée comme indexée."
 
 msgid ""
@@ -309,7 +310,7 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "stashing."
 msgstr ""
-"Si le patch s'applique proprement, la section éditée sera immédiatement "
+"Si la rustine s'applique proprement, la section éditée sera immédiatement "
 "marquée comme remisée."
 
 msgid ""
@@ -345,7 +346,7 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "unstaging."
 msgstr ""
-"Si le patch s'applique proprement, la section éditée sera immédiatement "
+"Si la rustine s'applique proprement, la section éditée sera immédiatement "
 "marquée comme desindexée."
 
 msgid ""
@@ -381,7 +382,7 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "applying."
 msgstr ""
-"Si le patch s'applique proprement, la section éditée sera immédiatement "
+"Si la rustine s'applique proprement, la section éditée sera immédiatement "
 "marquée comme appliquée."
 
 msgid ""
@@ -417,7 +418,7 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "discarding."
 msgstr ""
-"Si le patch s'applique proprement, la section éditée sera immédiatement "
+"Si la rustine s'applique proprement, la section éditée sera immédiatement "
 "marquée comme éliminée."
 
 msgid ""
@@ -892,10 +893,10 @@ msgid "'%s' outside a repository"
 msgstr "'%s' hors d'un dépôt"
 
 msgid "failed to read patch"
-msgstr "impossible de lire le patch"
+msgstr "impossible de lire la rustine"
 
 msgid "patch too large"
-msgstr "le patch est trop gros"
+msgstr "la rustine est trop grosse"
 
 #, c-format
 msgid "Cannot prepare timestamp regexp %s"
@@ -907,7 +908,7 @@ msgstr "regexec a retourné %d pour l'entrée : %s"
 
 #, c-format
 msgid "unable to find filename in patch at line %d"
-msgstr "nom de fichier du patch introuvable à la ligne %d"
+msgstr "nom de fichier de la rustine introuvable à la ligne %d"
 
 #, c-format
 msgid "git apply: bad git-diff - expected /dev/null, got %s on line %d"
@@ -965,7 +966,7 @@ msgstr "recomptage : ligne inattendue : %.*s"
 
 #, c-format
 msgid "patch fragment without header at line %d: %.*s"
-msgstr "fragment de patch sans en-tête à la ligne %d : %.*s"
+msgstr "fragment de rustine sans en-tête à la ligne %d : %.*s"
 
 msgid "new file depends on old contents"
 msgstr "le nouveau fichier dépend de contenus anciens"
@@ -975,7 +976,7 @@ msgstr "le fichier supprimé a encore du contenu"
 
 #, c-format
 msgid "corrupt patch at line %d"
-msgstr "patch corrompu à la ligne %d"
+msgstr "rustine corrompue à la ligne %d"
 
 #, c-format
 msgid "new file %s depends on old contents"
@@ -991,15 +992,15 @@ msgstr "** attention : le fichier %s devient vide mais n'est pas supprimé"
 
 #, c-format
 msgid "corrupt binary patch at line %d: %.*s"
-msgstr "patch binaire corrompu à la ligne %d : %.*s"
+msgstr "rustine binaire corrompue à la ligne %d : %.*s"
 
 #, c-format
 msgid "unrecognized binary patch at line %d"
-msgstr "patch binaire non reconnu à la ligne %d"
+msgstr "rustine binaire non reconnue à la ligne %d"
 
 #, c-format
 msgid "patch with only garbage at line %d"
-msgstr "patch totalement incompréhensible à la ligne %d"
+msgstr "rustine totalement incompréhensible à la ligne %d"
 
 #, c-format
 msgid "unable to read symlink %s"
@@ -1033,28 +1034,29 @@ msgstr ""
 
 #, c-format
 msgid "missing binary patch data for '%s'"
-msgstr "données de patch binaire manquantes pour '%s'"
+msgstr "données de rustine binaire manquantes pour '%s'"
 
 #, c-format
 msgid "cannot reverse-apply a binary patch without the reverse hunk to '%s'"
 msgstr ""
-"impossible d'appliquer l'inverse d'un patch binaire à '%s' sans la section "
+"impossible d'appliquer l'inverse d'une rustine binaire à '%s' sans la section "
 "inverse"
 
 #, c-format
 msgid "cannot apply binary patch to '%s' without full index line"
 msgstr ""
-"impossible d'appliquer un patch binaire à '%s' sans la ligne complète d'index"
+"impossible d'appliquer une rustine binaire à '%s' sans la ligne complète "
+"d'index"
 
 #, c-format
 msgid ""
 "the patch applies to '%s' (%s), which does not match the current contents."
 msgstr ""
-"le patch s'applique à '%s' (%s), ce qui ne correspond pas au contenu actuel."
+"la rustine s'applique à '%s' (%s), ce qui ne correspond pas au contenu actuel."
 
 #, c-format
 msgid "the patch applies to an empty '%s' but it is not empty"
-msgstr "le patch s'applique à un '%s' vide mais ce n'est pas vide"
+msgstr "la rustine s'applique à un '%s' vide mais ce n'est pas vide"
 
 #, c-format
 msgid "the necessary postimage %s for '%s' cannot be read"
@@ -1062,17 +1064,17 @@ msgstr "l'image postérieure nécessaire %s pour '%s' ne peut pas être lue"
 
 #, c-format
 msgid "binary patch does not apply to '%s'"
-msgstr "le patch binaire ne s'applique par correctement à '%s'"
+msgstr "la rustine binaire ne s'applique par correctement à '%s'"
 
 #, c-format
 msgid "binary patch to '%s' creates incorrect result (expecting %s, got %s)"
 msgstr ""
-"le patch binaire sur '%s' crée un résultat incorrect (%s attendu, mais %s "
+"la rustine binaire sur '%s' crée un résultat incorrect (%s attendu, mais %s "
 "trouvé)"
 
 #, c-format
 msgid "patch failed: %s:%ld"
-msgstr "le patch a échoué : %s:%ld"
+msgstr "l'application de la rustine a échoué : %s:%ld"
 
 #, c-format
 msgid "cannot checkout %s"
@@ -1116,18 +1118,18 @@ msgstr "Échec de l'application de la fusion à 3 points…\n"
 
 #, c-format
 msgid "Applied patch to '%s' with conflicts.\n"
-msgstr "Patch %s appliqué avec des conflits.\n"
+msgstr "Rustine %s appliquée avec des conflits.\n"
 
 #, c-format
 msgid "Applied patch to '%s' cleanly.\n"
-msgstr "Patch %s appliqué proprement.\n"
+msgstr "Rustine %s appliquée proprement.\n"
 
 #, c-format
 msgid "Falling back to direct application...\n"
 msgstr "Retour à une application directe…\n"
 
 msgid "removal patch leaves file contents"
-msgstr "le patch de suppression laisse un contenu dans le fichier"
+msgstr "la rustine de suppression laisse un contenu dans le fichier"
 
 #, c-format
 msgid "%s: wrong type"
@@ -1164,11 +1166,11 @@ msgstr "le fichier affecté '%s' est au-delà d'un lien symbolique"
 
 #, c-format
 msgid "%s: patch does not apply"
-msgstr "%s : le patch ne s'applique pas"
+msgstr "%s : la rustine ne s'applique pas"
 
 #, c-format
 msgid "Checking patch %s..."
-msgstr "Vérification du patch %s..."
+msgstr "Vérification de la rustine %s..."
 
 #, c-format
 msgid "sha1 information is lacking or useless for submodule %s"
@@ -1197,7 +1199,7 @@ msgstr "suppression de %s dans l'index impossible"
 
 #, c-format
 msgid "corrupt patch for submodule %s"
-msgstr "patch corrompu pour le sous-module %s"
+msgstr "rustine corrompue pour le sous-module %s"
 
 #, c-format
 msgid "unable to stat newly created file '%s'"
@@ -1227,7 +1229,7 @@ msgstr "écriture du fichier '%s' mode %o impossible"
 
 #, c-format
 msgid "Applied patch %s cleanly."
-msgstr "Patch %s appliqué proprement."
+msgstr "Rustine %s appliquée proprement."
 
 msgid "internal error"
 msgstr "erreur interne"
@@ -1235,8 +1237,8 @@ msgstr "erreur interne"
 #, c-format
 msgid "Applying patch %%s with %d reject..."
 msgid_plural "Applying patch %%s with %d rejects..."
-msgstr[0] "Application du patch %%s avec %d rejet..."
-msgstr[1] "Application du patch %%s avec %d rejets..."
+msgstr[0] "Application de la rustine %%s avec %d rejet..."
+msgstr[1] "Application de la rustine %%s avec %d rejets..."
 
 #, c-format
 msgid "cannot open %s"
@@ -1259,14 +1261,14 @@ msgid "Skipped patch '%s'."
 msgstr "Chemin '%s' non traité."
 
 msgid "No valid patches in input (allow with \"--allow-empty\")"
-msgstr "Pas de patch valide sur l'entrée (permis avec \"--allow-empty\")"
+msgstr "Pas de rustine valide sur l'entrée (permis avec \"--allow-empty\")"
 
 msgid "unable to read index file"
 msgstr "lecture du fichier d'index impossible"
 
 #, c-format
 msgid "can't open patch '%s': %s"
-msgstr "ouverture impossible du patch '%s' :%s"
+msgstr "ouverture impossible de la rustine '%s' :%s"
 
 #, c-format
 msgid "squelched %d whitespace error"
@@ -1302,35 +1304,35 @@ msgid "remove <num> leading slashes from traditional diff paths"
 msgstr "supprimer <num> barres obliques des chemins traditionnels de diff"
 
 msgid "ignore additions made by the patch"
-msgstr "ignorer les additions réalisées par le patch"
+msgstr "ignorer les additions réalisées par la rustine"
 
 msgid "instead of applying the patch, output diffstat for the input"
-msgstr "au lieu d'appliquer le patch, afficher le diffstat de l'entrée"
+msgstr "au lieu d'appliquer la rustine, afficher le diffstat de l'entrée"
 
 msgid "show number of added and deleted lines in decimal notation"
 msgstr ""
 "afficher le nombre de lignes ajoutées et supprimées en notation décimale"
 
 msgid "instead of applying the patch, output a summary for the input"
-msgstr "au lieu d'appliquer le patch, afficher un résumé de l'entrée"
+msgstr "au lieu d'appliquer la rustine, afficher un résumé de l'entrée"
 
 msgid "instead of applying the patch, see if the patch is applicable"
-msgstr "au lieu d'appliquer le patch, voir si le patch est applicable"
+msgstr "au lieu d'appliquer la rustine, voir si la rustine est applicable"
 
 msgid "make sure the patch is applicable to the current index"
-msgstr "s'assurer que le patch est applicable sur l'index actuel"
+msgstr "s'assurer que la rustine est applicable sur l'index actuel"
 
 msgid "mark new files with `git add --intent-to-add`"
 msgstr "marquer les nouveaux fichiers `git add --intent-to-add`"
 
 msgid "apply a patch without touching the working tree"
-msgstr "appliquer les patch sans toucher à la copie de travail"
+msgstr "appliquer les rustines sans toucher à la copie de travail"
 
 msgid "accept a patch that touches outside the working area"
-msgstr "accepter un patch qui touche hors de la copie de travail"
+msgstr "accepter une rustine qui touche hors de la copie de travail"
 
 msgid "also apply the patch (use with --stat/--summary/--check)"
-msgstr "appliquer aussi le patch (à utiliser avec --stat/--summary/--check)"
+msgstr "appliquer aussi la rustine (à utiliser avec --stat/--summary/--check)"
 
 msgid "attempt three-way merge, fall back on normal patch if that fails"
 msgstr ""
@@ -1367,7 +1369,7 @@ msgid "ignore changes in whitespace when finding context"
 msgstr "ignorer des modifications d'espace lors de la recherche de contexte"
 
 msgid "apply the patch in reverse"
-msgstr "appliquer le patch en sens inverse"
+msgstr "appliquer la rustine en sens inverse"
 
 msgid "don't expect at least one line of context"
 msgstr "ne pas s'attendre à au moins une ligne de contexte"
@@ -1929,14 +1931,14 @@ msgid "could not read the index"
 msgstr "impossible de lire l'index"
 
 msgid "editing patch failed"
-msgstr "échec de l'édition du patch"
+msgstr "échec de l'édition de la rustine"
 
 #, c-format
 msgid "could not stat '%s'"
 msgstr "impossible de stat '%s'"
 
 msgid "empty patch. aborted"
-msgstr "patch vide. abandon"
+msgstr "rustine vide. abandon"
 
 #, c-format
 msgid "could not apply '%s'"
@@ -2109,10 +2111,10 @@ msgstr "impossible d'ouvrir '%s' en écriture"
 
 #, c-format
 msgid "could not parse patch '%s'"
-msgstr "impossible d'analyser le patch '%s'"
+msgstr "impossible d'analyser la rustine '%s'"
 
 msgid "Only one StGIT patch series can be applied at once"
-msgstr "Seulement une série de patchs StGIT peut être appliquée à la fois"
+msgstr "Seulement une série de rustines StGIT peut être appliquée à la fois"
 
 msgid "invalid timestamp"
 msgstr "horodatage invalide"
@@ -2124,14 +2126,14 @@ msgid "invalid timezone offset"
 msgstr "décalage horaire invalide"
 
 msgid "Patch format detection failed."
-msgstr "Échec de détection du format du patch."
+msgstr "Échec de détection du format de la rustine."
 
 #, c-format
 msgid "failed to create directory '%s'"
 msgstr "échec de la création du répertoire '%s'"
 
 msgid "Failed to split patches."
-msgstr "Échec de découpage des patchs."
+msgstr "Échec de découpage des rustines."
 
 #, c-format
 msgid "When you have resolved this problem, run \"%s --continue\".\n"
@@ -2139,20 +2141,20 @@ msgstr "Quand vous avez résolu ce problème, lancez \"%s --continue\".\n"
 
 #, c-format
 msgid "If you prefer to skip this patch, run \"%s --skip\" instead.\n"
-msgstr "Si vous préférez plutôt sauter ce patch, lancez \"%s --skip\".\n"
+msgstr "Si vous préférez plutôt sauter cette rustine, lancez \"%s --skip\".\n"
 
 #, c-format
 msgid ""
 "To record the empty patch as an empty commit, run \"%s --allow-empty\".\n"
 msgstr ""
-"Pour enregistrer le patch vide comme un commit vide, lancez \"%s --allow-"
+"Pour enregistrer la rustine vide comme un commit vide, lancez \"%s --allow-"
 "empty\".\n"
 
 #, c-format
 msgid "To restore the original branch and stop patching, run \"%s --abort\"."
 msgstr ""
-"Pour restaurer la branche originale et arrêter de patcher, lancez \"%s --"
-"abort\"."
+"Pour restaurer la branche originale et arrêter d'appliquer des rustines, "
+"lancez \"%s --abort\"."
 
 msgid "Patch sent with format=flowed; space at the end of lines might be lost."
 msgstr ""
@@ -2184,11 +2186,11 @@ msgid ""
 "Did you hand edit your patch?\n"
 "It does not apply to blobs recorded in its index."
 msgstr ""
-"Avez-vous édité le patch à la main ?\n"
+"Avez-vous édité la rustine à la main ?\n"
 "Il ne s'applique pas aux blobs enregistrés dans son index."
 
 msgid "Falling back to patching base and 3-way merge..."
-msgstr "Retour à un patch de la base et fusion à 3 points..."
+msgstr "Retour à une rustine de la base et fusion à 3 points..."
 
 msgid "Failed to merge in the changes."
 msgstr "Échec d'intégration des modifications."
@@ -2222,7 +2224,7 @@ msgstr "impossible d'écrire le fichier d'index"
 
 #, c-format
 msgid "Dirty index: cannot apply patches (dirty: %s)"
-msgstr "Index sale : impossible d'appliquer des patchs (sales : %s)"
+msgstr "Index sale : impossible d'appliquer des rustines (sales : %s)"
 
 #, c-format
 msgid "Skipping: %.*s"
@@ -2233,7 +2235,7 @@ msgid "Creating an empty commit: %.*s"
 msgstr "Création d'un commit vide : %.*s"
 
 msgid "Patch is empty."
-msgstr "Le patch actuel est vide."
+msgstr "La rustine actuelle est vide."
 
 #, c-format
 msgid "Applying: %.*s"
@@ -2244,11 +2246,12 @@ msgstr "Pas de changement -- Patch déjà appliqué."
 
 #, c-format
 msgid "Patch failed at %s %.*s"
-msgstr "l'application du patch a échoué à %s %.*s"
+msgstr "l'application de la rustine a échoué à %s %.*s"
 
 msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
 msgstr ""
-"Utilisez 'git am --show-current-patch=diff' pour visualiser le patch en échec"
+"Utilisez 'git am --show-current-patch=diff' pour visualiser la rustine en "
+"échec"
 
 msgid "No changes - recorded it as an empty commit."
 msgstr "aucune modification - enregistré comme un commit vide."
@@ -2260,8 +2263,8 @@ msgid ""
 msgstr ""
 "Aucun changement - avez-vous oublié d'utiliser 'git add' ?\n"
 "S'il n'y a plus rien à indexer, il se peut qu'autre chose ait déjà\n"
-"introduit les mêmes changements ; vous pourriez avoir envie de sauter ce "
-"patch."
+"introduit les mêmes changements ; vous pourriez avoir envie de sauter cette "
+"rustine."
 
 msgid ""
 "You still have unmerged paths in your index.\n"
@@ -2348,34 +2351,36 @@ msgid "format"
 msgstr "format"
 
 msgid "format the patch(es) are in"
-msgstr "format de présentation des patchs"
+msgstr "format de présentation des rustines"
 
 msgid "override error message when patch failure occurs"
-msgstr "surcharger le message d'erreur lors d'un échec d'application de patch"
+msgstr ""
+"surcharger le message d'erreur lors d'un échec d'application d'une rustine"
 
 msgid "continue applying patches after resolving a conflict"
-msgstr "continuer à appliquer les patchs après résolution d'un conflit"
+msgstr "continuer à appliquer les rustines après résolution d'un conflit"
 
 msgid "synonyms for --continue"
 msgstr "synonymes de --continue"
 
 msgid "skip the current patch"
-msgstr "sauter le patch courant"
+msgstr "sauter la rustine courante"
 
 msgid "restore the original branch and abort the patching operation"
-msgstr "restaurer la branche originale et abandonner les applications de patch"
+msgstr ""
+"restaurer la branche originale et abandonner les applications de rustines"
 
 msgid "abort the patching operation but keep HEAD where it is"
-msgstr "abandonne l'opération de patch mais garde HEAD où il est"
+msgstr "abandonne l'opération de rustine mais garde HEAD où il est"
 
 msgid "show the patch being applied"
-msgstr "afficher le patch en cours d'application"
+msgstr "afficher la rustine en cours d'application"
 
 msgid "try to apply current patch again"
-msgstr "essayer d'appliquer de nouveau le patch"
+msgstr "essayer d'appliquer de nouveau la rustine"
 
 msgid "record the empty patch as an empty commit"
-msgstr "enregistrer le patch vide comme un commit vide"
+msgstr "enregistrer la rustine vide comme un commit vide"
 
 msgid "lie about committer date"
 msgstr "mentir sur la date de validation"
@@ -7896,7 +7901,7 @@ msgid "base commit shouldn't be in revision list"
 msgstr "le commit de base ne devrait pas faire partie de la liste de révisions"
 
 msgid "cannot get patch id"
-msgstr "impossible d'obtenir l'id du patch"
+msgstr "impossible d'obtenir l'id de la rustine"
 
 msgid "failed to infer range-diff origin of current series"
 msgstr ""
@@ -7909,13 +7914,13 @@ msgstr ""
 "utilisation de '%s' comme une différence d'intervalle pour la série actuelle"
 
 msgid "use [PATCH n/m] even with a single patch"
-msgstr "utiliser [PATCH n/m] même avec un patch unique"
+msgstr "utiliser [PATCH n/m] même avec une rustine unique"
 
 msgid "use [PATCH] even with multiple patches"
-msgstr "utiliser [PATCH] même avec des patchs multiples"
+msgstr "utiliser [PATCH] même avec des rustines multiples"
 
 msgid "print patches to standard out"
-msgstr "afficher les patchs sur la sortie standard"
+msgstr "afficher les rustines sur la sortie standard"
 
 msgid "generate a cover letter"
 msgstr "générer une lettre de motivation"
@@ -7931,7 +7936,7 @@ msgid "use <sfx> instead of '.patch'"
 msgstr "utiliser <sfx> au lieu de '.patch'"
 
 msgid "start numbering patches at <n> instead of 1"
-msgstr "démarrer la numérotation des patchs à <n> au lieu de 1"
+msgstr "démarrer la numérotation des rustines à <n> au lieu de 1"
 
 msgid "reroll-count"
 msgstr "reroll-count"
@@ -7975,10 +7980,10 @@ msgid "output all-zero hash in From header"
 msgstr "écrire une empreinte à zéro dans l'entête From"
 
 msgid "don't include a patch matching a commit upstream"
-msgstr "ne pas inclure un patch correspondant à un commit amont"
+msgstr "ne pas inclure de rustine correspondant à un commit amont"
 
 msgid "show patch format instead of default (patch + stat)"
-msgstr "afficher le format du patch au lieu du défaut (patch + stat)"
+msgstr "afficher le format de la rustine au lieu du défaut (rustine + stat)"
 
 msgid "Messaging"
 msgstr "Communication"
@@ -8015,10 +8020,10 @@ msgid "boundary"
 msgstr "limite"
 
 msgid "attach the patch"
-msgstr "attacher le patch"
+msgstr "attacher la rustine"
 
 msgid "inline the patch"
-msgstr "patch à l'intérieur"
+msgstr "incorporer la rustine à l'intérieur"
 
 msgid "enable message threading, styles: shallow, deep"
 msgstr ""
@@ -8034,27 +8039,27 @@ msgid "base-commit"
 msgstr "commit-de-base"
 
 msgid "add prerequisite tree info to the patch series"
-msgstr "ajouter un arbre prérequis à la série de patchs"
+msgstr "ajouter un arbre prérequis à la série de rustines"
 
 msgid "add a signature from a file"
 msgstr "ajouter une signature depuis un fichier"
 
 msgid "don't print the patch filenames"
-msgstr "ne pas afficher les noms de fichiers des patchs"
+msgstr "ne pas afficher les noms de fichiers des rustines"
 
 msgid "show progress while generating patches"
 msgstr ""
-"afficher la barre de progression durant la phase de génération des patchs"
+"afficher la barre de progression durant la phase de génération des rustines"
 
 msgid "show changes against <rev> in cover letter or single patch"
 msgstr ""
-"afficher les modifications par rapport à <rév> dans la première page ou un "
-"patch"
+"afficher les modifications par rapport à <rév> dans la première page ou une "
+"rustine"
 
 msgid "show changes against <refspec> in cover letter or single patch"
 msgstr ""
 "afficher les modifications par rapport à <refspec> dans la première page ou "
-"un patch"
+"une rustine"
 
 msgid "percentage by which creation is weighted"
 msgstr "pourcentage par lequel la création est pondérée"
@@ -8085,7 +8090,7 @@ msgid "could not create directory '%s'"
 msgstr "impossible de créer le répertoire '%s'"
 
 msgid "--interdiff requires --cover-letter or single patch"
-msgstr "--interdiff requiert --cover-letter ou un patch unique"
+msgstr "--interdiff requiert --cover-letter ou une rustine unique"
 
 msgid "Interdiff:"
 msgstr "Interdiff :"
@@ -8095,7 +8100,7 @@ msgid "Interdiff against v%d:"
 msgstr "Interdiff contre v%d :"
 
 msgid "--range-diff requires --cover-letter or single patch"
-msgstr "--range-diff requiert --cover-letter ou un patch unique"
+msgstr "--range-diff requiert --cover-letter ou une rustine unique"
 
 msgid "Range-diff:"
 msgstr "Diff-intervalle :"
@@ -8109,7 +8114,7 @@ msgid "unable to read signature file '%s'"
 msgstr "lecture du fichier de signature '%s' impossible"
 
 msgid "Generating patches"
-msgstr "Génération des patchs"
+msgstr "Génération des rustines"
 
 msgid "failed to create output files"
 msgstr "échec de création des fichiers en sortie"
@@ -8302,7 +8307,7 @@ msgstr ""
 
 #. TRANSLATORS: keep <> in "<" mail ">" info.
 msgid "git mailinfo [<options>] <msg> <patch> < mail >info"
-msgstr "git mailinfo [<options>] <msg> <patch> < mail >info"
+msgstr "git mailinfo [<options>] <msg> <rustine> < mail >info"
 
 msgid "keep subject"
 msgstr "garder le sujet"
@@ -9762,7 +9767,7 @@ msgid "use the stable patch-id algorithm"
 msgstr "utiliser l'algorithme stable patch-id"
 
 msgid "don't strip whitespace from the patch"
-msgstr "ne pas retirer les espaces blancs du patch"
+msgstr "ne pas retirer les espaces blancs de la rustine"
 
 msgid "git prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
 msgstr "git prune [-n] [-v] [--progress] [--expire <heure>] [--] [<head>…]"
@@ -10554,7 +10559,7 @@ msgid "continue"
 msgstr "continuer"
 
 msgid "skip current patch and continue"
-msgstr "sauter le patch courant et continuer"
+msgstr "sauter la rustine courante et continuer"
 
 msgid "abort and check out the original branch"
 msgstr "abandonner et extraire la branche d'origine"
@@ -10566,7 +10571,7 @@ msgid "edit the todo list during an interactive rebase"
 msgstr "éditer la liste à faire lors d'un rebasage interactif"
 
 msgid "show the patch file being applied or merged"
-msgstr "afficher le patch en cours d'application ou de fusion"
+msgstr "afficher la rustine en cours d'application ou de fusion"
 
 msgid "use apply strategies to rebase"
 msgstr "utiliser des stratégies d'application pour rebaser"
@@ -12803,7 +12808,7 @@ msgid "stash staged changes only"
 msgstr "remiser seulement les modifications indexées"
 
 msgid "stash in patch mode"
-msgstr "remiser en mode patch"
+msgstr "remiser en mode rustine"
 
 msgid "quiet mode"
 msgstr "mode silencieux"
@@ -14415,13 +14420,13 @@ msgid "Add file contents to the index"
 msgstr "Ajouter le contenu de fichiers dans l'index"
 
 msgid "Apply a series of patches from a mailbox"
-msgstr "Appliquer une série de patchs depuis une boîte mail"
+msgstr "Appliquer une série de rustines depuis une boîte mail"
 
 msgid "Annotate file lines with commit information"
 msgstr "Annoter les lignes du fichier avec l'information de commit"
 
 msgid "Apply a patch to files and/or to the index"
-msgstr "Appliquer une patch à des fichiers ou à l'index"
+msgstr "Appliquer une rustine à des fichiers ou à l'index"
 
 msgid "Import a GNU Arch repository into Git"
 msgstr "Importer dans Git un dépôt GNU Arch"
@@ -14573,7 +14578,7 @@ msgid "Run a Git command on a list of repositories"
 msgstr "Lance une commande Git sur une liste de dépôts"
 
 msgid "Prepare patches for e-mail submission"
-msgstr "Préparer les patchs pour soumission par courriel"
+msgstr "Préparer les rustines pour soumission par courriel"
 
 msgid "Verifies the connectivity and validity of the objects in the database"
 msgstr ""
@@ -14643,7 +14648,7 @@ msgstr "Afficher le contenu d'un objet arbre"
 
 msgid "Extracts patch and authorship from a single e-mail message"
 msgstr ""
-"Extraire le patch et l'information de d'auteur depuis un simple message de "
+"Extraire la rustine et l'information de l'auteur depuis un simple message de "
 "courriel"
 
 msgid "Simple UNIX mbox splitter program"
@@ -14706,7 +14711,7 @@ msgid "Pack heads and tags for efficient repository access"
 msgstr "Empaqueter les têtes et les étiquettes pour un accès efficace au dépôt"
 
 msgid "Compute unique ID for a patch"
-msgstr "Calculer l'ID unique d'un patch"
+msgstr "Calculer l'ID unique d'une rustine"
 
 msgid "Prune all unreachable objects from the object database"
 msgstr "Élaguer les objets inatteignables depuis la base de données des objets"
@@ -14781,7 +14786,7 @@ msgid "Remove files from the working tree and from the index"
 msgstr "Supprimer des fichiers de la copie de travail et de l'index"
 
 msgid "Send a collection of patches as emails"
-msgstr "Envoyer un ensemble de patchs comme courriels"
+msgstr "Envoyer un ensemble de rustines comme courriels"
 
 msgid "Push objects over Git protocol to another repository"
 msgstr "Pousser les objets sur un autre dépôt via le protocole Git"
@@ -16421,7 +16426,7 @@ msgid "Diff output format options"
 msgstr "Options de format de sortie de diff"
 
 msgid "generate patch"
-msgstr "générer le patch"
+msgstr "générer la rustine"
 
 msgid "<n>"
 msgstr "<n>"
@@ -21365,7 +21370,7 @@ msgstr "impossible d'appliquer %s... %s"
 
 #, c-format
 msgid "dropping %s %s -- patch contents already upstream\n"
-msgstr "abandon de %s %s -- le contenu du patch déjà en amont\n"
+msgstr "abandon de %s %s -- le contenu de la rustine est déjà en amont\n"
 
 #, c-format
 msgid "git %s: failed to read the index"
@@ -23272,18 +23277,18 @@ msgid "You are in the middle of an am session."
 msgstr "Vous êtes au milieu d'une session am."
 
 msgid "The current patch is empty."
-msgstr "Le patch actuel est vide."
+msgstr "La rustine actuelle est vide."
 
 msgid "  (fix conflicts and then run \"git am --continue\")"
 msgstr "  (réglez les conflits puis lancez \"git am --continue\")"
 
 msgid "  (use \"git am --skip\" to skip this patch)"
-msgstr "  (utilisez \"git am --skip\" pour sauter ce patch)"
+msgstr "  (utilisez \"git am --skip\" pour sauter cette rustine)"
 
 msgid ""
 "  (use \"git am --allow-empty\" to record this patch as an empty commit)"
 msgstr ""
-"  (utilisez \"git am --allow-empty\" pour enregistrer le patch comme un "
+"  (utilisez \"git am --allow-empty\" pour enregistrer la rustine comme un "
 "commit vide)"
 
 msgid "  (use \"git am --abort\" to restore the original branch)"
@@ -23328,7 +23333,7 @@ msgid "  (fix conflicts and then run \"git rebase --continue\")"
 msgstr "  (réglez les conflits puis lancez \"git rebase --continue\")"
 
 msgid "  (use \"git rebase --skip\" to skip this patch)"
-msgstr "  (utilisez \"git rebase --skip\" pour sauter ce patch)"
+msgstr "  (utilisez \"git rebase --skip\" pour sauter cette rustine)"
 
 msgid "  (use \"git rebase --abort\" to check out the original branch)"
 msgstr "  (utilisez \"git rebase --abort\" pour extraire la branche d'origine)"
@@ -23388,7 +23393,7 @@ msgstr ""
 "  (tous les conflits sont réglés : lancez \"git cherry-pick --continue\")"
 
 msgid "  (use \"git cherry-pick --skip\" to skip this patch)"
-msgstr "  (utilisez \"git cherry-pick --skip\" pour sauter ce patch)"
+msgstr "  (utilisez \"git cherry-pick --skip\" pour sauter cette rustine)"
 
 msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
 msgstr "  (utilisez \"git cherry-pick --abort\" pour annuler le picorage)"
@@ -23410,7 +23415,7 @@ msgid "  (all conflicts fixed: run \"git revert --continue\")"
 msgstr "  (tous les conflits sont réglés : lancez \"git revert --continue\")"
 
 msgid "  (use \"git revert --skip\" to skip this patch)"
-msgstr "  (utilisez \"git revert --skip\" pour sauter ce patch)"
+msgstr "  (utilisez \"git revert --skip\" pour sauter cette rustine)"
 
 msgid "  (use \"git revert --abort\" to cancel the revert operation)"
 msgstr "  (utilisez \"git revert --abort\" pour annuler le rétablissement)"
@@ -23734,7 +23739,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Aucun fichier patch spécifié !\n"
+"Aucun fichier de rustine spécifié !\n"
 "\n"
 
 #, perl-format
@@ -23754,7 +23759,7 @@ msgid ""
 msgstr ""
 "Les lignes commençant par \"GIT:\" seront supprimées.\n"
 "Envisagez d'inclure un diffstat global ou une table des matières\n"
-"pour le patch que vous êtes en train d'écrire.\n"
+"pour la rustine que vous êtes en train d'écrire.\n"
 "\n"
 "Effacez le corps si vous ne souhaitez pas envoyer un résumé.\n"
 
@@ -23791,7 +23796,7 @@ msgid ""
 "has the template subject '*** SUBJECT HERE ***'. Pass --force if you really "
 "want to send.\n"
 msgstr ""
-"Envoi refusé parce que le patch\n"
+"Envoi refusé parce que la rustine\n"
 "\t%s\n"
 "a un sujet modèle '*** SUBJECT HERE ***'. Passez --force is vous souhaitez "
 "vraiment envoyer.\n"
@@ -23944,7 +23949,7 @@ msgid ""
 msgstr ""
 "fatal : %s : rejeté par le crochet %s\n"
 "%s\n"
-"attention : aucun patch envoyé\n"
+"attention : aucune rustine envoyée\n"
 
 #, perl-format
 msgid "unable to open %s: %s\n"
@@ -23956,7 +23961,7 @@ msgid ""
 "warning: no patches were sent\n"
 msgstr ""
 "fatal : %s : %d est plus long que 998 caractères \n"
-"attention : aucun patch envoyé\n"
+"attention : aucune rustine envoyée\n"
 
 #, perl-format
 msgid "Skipping %s with backup suffix '%s'.\n"
@@ -24103,7 +24108,7 @@ msgstr "Souhaitez-vous réellement envoyer %s ?[y|N] : "
 #~ msgstr "%s est incompatible avec toute autre option"
 
 #~ msgid "Could not write patch"
-#~ msgstr "Impossible d'écrire le patch"
+#~ msgstr "Impossible d'écrire la rustine"
 
 #, c-format
 #~ msgid "Could not stat '%s'"
