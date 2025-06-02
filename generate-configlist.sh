@@ -19,7 +19,8 @@ EOF
 	s/::$//;
 	s/`//g;
 	s/^.*$/	"&",/;
-	s/,  */",\n	"/g;
+	s/,  */",\
+	"/g;
 	p;};
 d' \
 	    "$SOURCE_DIR"/Documentation/*config.adoc \
