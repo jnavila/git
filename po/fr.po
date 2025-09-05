@@ -152,7 +152,7 @@ msgstr[1] "%d chemins inversés\n"
 
 #, c-format
 msgid "No untracked files.\n"
-msgstr "Aucun Fichier non suivi.\n"
+msgstr "Aucun fichier non suivi.\n"
 
 msgid "Add untracked"
 msgstr "Ajouter un fichier non-suivi"
@@ -215,7 +215,7 @@ msgid "select multiple ranges"
 msgstr "sélectionner plusieurs plages"
 
 msgid "select item based on unique prefix"
-msgstr "sélectionner un élément basé sur une préfixe unique"
+msgstr "sélectionner un élément basé sur un préfixe unique"
 
 msgid "unselect specified items"
 msgstr "désélectionner les éléments spécifiés"
@@ -347,7 +347,7 @@ msgid ""
 "unstaging."
 msgstr ""
 "Si la rustine s'applique proprement, la section éditée sera immédiatement "
-"marquée comme desindexée."
+"marquée comme désindexée."
 
 msgid ""
 "y - unstage this hunk\n"
@@ -618,7 +618,7 @@ msgstr ""
 "l'élimine !) [y|n] ? "
 
 msgid "The selected hunks do not apply to the index!"
-msgstr "Les sections sélectionnées ne s'applique pas à l'index !"
+msgstr "Les sections sélectionnées ne s'appliquent pas à l'index !"
 
 msgid "Apply them to the worktree anyway? "
 msgstr "Les appliquer quand même à l'arbre de travail ? "
@@ -855,7 +855,7 @@ msgid ""
 "modifications.\n"
 msgstr ""
 "Les chemins suivants ont été déplacés hors de\n"
-"la définition d'extraction clairsemée mai ne sont pas\n"
+"la définition d'extraction clairsemée mais ne sont pas\n"
 "clairsemés à cause de modifications locales\n"
 
 msgid ""
@@ -1583,7 +1583,7 @@ msgstr "Impossible d'ajouter l'attribut additionnel"
 
 #, c-format
 msgid "ignoring overly long attributes line %d"
-msgstr "ligne d'attribute trop longue ignorée %d"
+msgstr "ligne d'attribut trop longue ignorée %d"
 
 #, c-format
 msgid "%s not allowed: %s:%d"
@@ -2274,7 +2274,7 @@ msgid ""
 "such.\n"
 "You might run `git rm` on a file to accept \"deleted by them\" for it."
 msgstr ""
-"Vous avez encore des chemin non-fusionnés dans votre index.\n"
+"Vous avez encore des chemins non-fusionnés dans votre index.\n"
 "Vous devriez lancer 'git add' sur chaque conflit résolu pour les marquer "
 "comme tel.\n"
 "Vous pouvez lancer 'git rm' sur un fichier \"supprimé par eux\" pour "
@@ -4250,7 +4250,7 @@ msgstr "supprimer seulement les fichiers ignorés"
 
 msgid "clean.requireForce is true and -f not given: refusing to clean"
 msgstr ""
-"clean.requireForce positionné est true et -f non fourni ; refus de nettoyer"
+"clean.requireForce est positionné à true et -f non fourni ; refus de nettoyer"
 
 #, c-format
 msgid "info: Could not add alternate for '%s': %s\n"
@@ -4321,7 +4321,7 @@ msgid "unable to update %s"
 msgstr "impossible de mettre à jour %s"
 
 msgid "failed to initialize sparse-checkout"
-msgstr "échec lors de l'initialisation l'extraction clairsemée"
+msgstr "échec lors de l'initialisation de l'extraction clairsemée"
 
 msgid "remote HEAD refers to nonexistent ref, unable to checkout"
 msgstr ""
@@ -17041,7 +17041,7 @@ msgstr ""
 msgid ""
 "you may want to set your %s variable to at least %d and retry the command."
 msgstr ""
-"vous souhaitez peut-être régler la variable %s à au moins %d et réessayer le "
+"vous souhaitez peut-être régler la variable %s à au moins %d et réessayer la "
 "commande."
 
 #, c-format
@@ -20197,7 +20197,7 @@ msgstr ""
 "\tgit config --global init.defaultBranch <nom>\n"
 "\n"
 "Les noms les plus utilisés à la place de 'master' sont 'main', 'trunk' et\n"
-"'development'. La branche nouvellement créée peut être rénommée avec :\n"
+"'development'. La branche nouvellement créée peut être renommée avec :\n"
 "\n"
 "\tgit branch -m <nom>\n"
 
