@@ -17041,7 +17041,7 @@ msgstr ""
 msgid ""
 "you may want to set your %s variable to at least %d and retry the command."
 msgstr ""
-"vous souhaitez peut-être régler la variable %s à au moins %d et réessayer le "
+"vous souhaitez peut-être régler la variable %s à au moins %d et réessayer la "
 "commande."
 
 #, c-format
