@@ -23429,31 +23429,31 @@ msgstr "k"
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte/second and gibibyte
 msgid "GiB/s"
-msgstr "GiO/s"
+msgstr "Gio/s"
 
 msgid "GiB"
-msgstr "GiO"
+msgstr "Gio"
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte/second and mebibyte
 msgid "MiB/s"
-msgstr "MiO/s"
+msgstr "Mio/s"
 
 msgid "MiB"
-msgstr "MiO"
+msgstr "Mio"
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte/second and kibibyte
 msgid "KiB/s"
-msgstr "KiO/s"
+msgstr "Kio/s"
 
 msgid "KiB"
-msgstr "KiO"
+msgstr "Kio"
 
 #. TRANSLATORS: IEC 80000-13:2008 byte/second and byte
 msgid "B/s"
-msgstr "Octets/s"
+msgstr "octets/s"
 
 msgid "B"
-msgstr "Octets"
+msgstr "octets"
 
 #. TRANSLATORS: IEC 80000-13:2008 byte/second
 msgid "byte/s"
